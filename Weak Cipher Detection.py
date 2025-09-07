@@ -86,7 +86,7 @@ def scan(helper, msg, param, value):
             alert = helper.newAlert()
             alert.setRisk(2)  # Medium
             alert.setConfidence(3)  # High
-            alert.setName("SSL/TLS Weak Cipher Suites Detected")
+            alert.setName("SSL/TLS Weak Cipher Suites Detected (CUSTOM)")
             alert.setDescription("The server supports weak cipher suites or insecure TLS versions that may compromise communication security.")
             alert.setSolution("Disable weak cipher suites and use strong encryption algorithms with forward secrecy.")
             alert.setReference("https://owasp.org/www-project-top-ten/")
